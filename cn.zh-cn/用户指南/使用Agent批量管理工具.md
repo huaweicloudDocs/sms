@@ -20,35 +20,40 @@
 
 1.  在浏览器中输入Agent管理中心地址，如https://192.168.0.1:8443，输入账号密码，单击“登录”。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   192.168.0.1仅为示例说明，请输入实际的IP地址。  
-    >-   首次登录需要先注册后才能登录。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   192.168.0.1仅为示例说明，请输入实际的IP地址。
+    >-   首次登录需要先注册后才能登录。
 
 2.  单击左侧导航栏的“配置管理”，进入“配置管理”界面。
 3.  在“Agent管理”页，单击操作列的“更新”，更新Agent。
+
+    **图 1**  更新Agent<a name="fig6761184219582"></a>  
+    ![](figures/更新Agent.png "更新Agent")
+
 4.  单击右上角的“添加账号”，输入华为云账号、访问密钥ID（AK）、秘密访问密钥（SK），单击“确定”。
 
-    >![](public_sys-resources/icon-notice.gif) **须知：**   
-    >请确保输入的华为云账号、AK、SK正确，或者参考[如何获取AK/SK？（账号）](https://support.huaweicloud.com/sms_faq/sms_faq_0032.html)或[如何获取AK/SK？（IAM用户）](https://support.huaweicloud.com/sms_faq/sms_faq_0012.html)。  
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >-   该账号为目的端华为云账号与AK/SK。
+    >-   请确保输入的华为云账号、AK、SK正确，请参考[如何获取AK/SK？（账号）](https://support.huaweicloud.com/sms_faq/sms_faq_0032.html)或[如何获取AK/SK？（IAM用户）](https://support.huaweicloud.com/sms_faq/sms_faq_0012.html)。
 
 5.  添加源端。
     1.  单击“源端管理 \> 添加源端”，配置源端服务器参数，配置完成后，单击“下一步”。
 
-        **图 1**  添加源端<a name="fig57852192565"></a>  
+        **图 2**  添加源端<a name="fig57852192565"></a>  
         ![](figures/添加源端.png "添加源端")
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >-   推送及安装Agent到源端服务器的速度依赖于网络带宽速度，Windows系统为5-10左右，Linux系统在3-5分钟左右。  
-        >-   推送Agent请确保连机器保持“在线”状态。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >-   推送及安装Agent到源端服务器的速度依赖于网络带宽速度，Windows系统为5-10左右，Linux系统在3-5分钟左右。
+        >-   推送Agent请确保连机器保持“在线”状态。
 
     2.  在选择创建任务界面，选择模板及目的端公网IP/目的端私有IP，单击“确定”。
 
-        **图 2**  创建迁移任务<a name="fig2054718111716"></a>  
+        **图 3**  创建迁移任务<a name="fig2054718111716"></a>  
         ![](figures/创建迁移任务.png "创建迁移任务")
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >-   此处的模板为SMS中的模板。  
-        >-   迁移时创建服务器的密码为1 + sk前八位 + !。如sk前八位为RgybsdPP，则密码为1RgybsdPP!。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >-   此处的模板为SMS中的模板。
+        >-   迁移时创建服务器的密码为1 + sk前八位 + !。如sk前八位为RgybsdPP，则密码为1RgybsdPP!。
 
 
 6.  批量添加源端。
@@ -67,7 +72,7 @@
 -   删除：卸载安装在源端的Agent，并删除相关记录。
 -   推送/升级: 升级或重新推送Agent到源端。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >源端Agent 在7天内没有迁移任务时，会主动断开连接状态，需要重新“连接到SMS”。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >源端Agent 在7天内没有迁移任务时，会主动断开连接状态，需要重新“连接到SMS”。
 
 
